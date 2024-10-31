@@ -188,12 +188,12 @@ echo "ANDA HARUS MEMILIKI PANEL PTERODACTYL TERLEBIH DAHULU! APAKAH ANDA MEMPUNY
 
             # Perintah untuk mengunduh dan menginstal tema Enigma
             apt install git
-            cd /var/www && git clone https://github.com/rainmc0123/RainMc.git
-            mv /var/www/RainMc/enigmarain.zip /var/www/
-            rm -r RainMc
+            cd /var/www && git clone https://github.com/miftah12345678/enigma.git
+            mv /var/www/enigma/enigmahams.zip /var/www/
+            rm -r enigma
             apt install unzip
 echo "𝗦𝗜𝗟𝗔𝗛𝗞𝗔𝗡 𝗣𝗜𝗟𝗜𝗛 𝗔"
-            unzip enigmarain.zip         
+            unzip enigmahams.zip         
             echo "𝗣𝗥𝗢𝗦𝗘𝗦 𝗜𝗡𝗦𝗧𝗔𝗟𝗟"
             echo "ᴊɪᴋᴀ ᴀᴅᴀ ᴘɪʟɪʜᴀɴ ᴅɪʙᴀᴡᴀʜ sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʏ"
             sudo mkdir -p /etc/apt/keyrings
@@ -775,8 +775,8 @@ uninstall_theme() {
     # Perintah untuk uninstall tema
     cd /var/www/
     rm -r pterodactyl.zip
-    rm -r enigmarain.zip
-    rm -r RainMc
+    rm -r enigmahams.zip
+    rm -r enigma
     rm -r billmodv11.zip
     rm -r IceMinecraftTheme.tar.gz
     rm -r RainFuturistic
@@ -877,7 +877,7 @@ check_license() {
     read -r LICENSE_KEY
     # Add the logic to verify the license key here.
     # This function should return 0 if the license is valid, and 1 otherwise.
-    if [ "$LICENSE_KEY" == "RAIN" ]; then
+    if [ "$LICENSE_KEY" == "HAMSOFFC" ]; then
         return 0
     else
         return 1
